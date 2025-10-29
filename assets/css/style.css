@@ -1,9 +1,36 @@
 html {
+  --gray100: hsl(0, 0%, 95%);
+  --gold500: hsl(31, 77%, 52%);
+  --cyan800: hsl(184, 100%, 22%);
+  --green950: hsl(179, 100%, 13%);
+  --paraWhite: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--gray100);
+  padding: 16px 0px;
+}
+
+.max-width-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 16px;
+}
+
+article {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section {
+  padding: 44px;
+}
+
+section > * {
+  margin-bottom: 36px;
 }
 
 h1 {
@@ -11,4 +38,53 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
+  color: var(--gray100);
+  font-size: 3rem;
+  margin-top: 24px;
+}
+
+main {
+  color: var(--paraWhite);
+}
+
+.sedan {
+  background-color: var(--gold500);
+}
+
+.sedan button {
+  color: var(--gold500);
+}
+
+.suv {
+  background-color: var(--cyan800);
+}
+
+.suv button {
+  color: var(--cyan800);
+}
+
+.luxury {
+  background-color: var(--green950);
+}
+
+.luxury button {
+  color: var(--green950);
+}
+
+footer {
+  margin-bottom: 0px;
+}
+
+button {
+  padding: 16px 28px;
+  border: 2px solid var(--gray100);
+  border-radius: 40px;
+  background-color: var(--gray100);
+  font-weight: 500;
+}
+
+button:hover {
+  color: var(--gray100);
+  background-color: hsla(0, 0%, 100%, 0);
 }
